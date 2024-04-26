@@ -2,7 +2,8 @@ import telebot
 from telebot import types
 import json
 import os
-bot = telebot.TeleBot("6403082457:AAHdyXU6XeVgYd966VOhJ41FEk5rMRCIkYE")
+TOKEN = os.getenv('TOKEN')
+bot = telebot.TeleBot(TOKEN)
 
 
 if not os.path.isfile('users.json'):
