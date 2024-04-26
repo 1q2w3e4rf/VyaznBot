@@ -23,7 +23,7 @@ def start(message):
             users.append({"chat_id": message.chat.id, "losses": 0, "wins": 0})
         file.seek(0)
         json.dump(users, file, indent=4)
-    bot.reply_to(message, 'Напиши /Go. Чтоб узнать о Везниках')
+    bot.reply_to(message, 'Напиши /Go. Чтоб узнать о Вязниках')
 
 @bot.message_handler(commands=['Go'])
 def ur(message):
